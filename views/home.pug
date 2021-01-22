@@ -1,0 +1,41 @@
+//- We are filling base.pug with the help of home.pug
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+block style
+    style
+        include ../static/style.css
+block content
+    section#introSection
+        div Welcome to Gaurang's Dance Academy
+        div.small Live Learn Dance Repeat
+    section#misssionSection
+        h2 Our mission
+        div.card
+          h3 Dance Perfection.
+          div.card-box
+            div.card.img
+              img(src="/static/img/");
+            div.card-content
+              p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quas dignissimos nam nulla expedita, nemo optio itaque, facere amet beatae animi sapiente nesciunt cum earum atque ex libero a ea.
+        div.card
+          h3 Dance the way you like.
+          div.card-box
+            div.card.img
+              img(src="/static/img/f.png");
+            div.card-content
+              p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quas dignissimos nam nulla expedita, nemo optio itaque, facere amet beatae animi sapiente nesciunt cum earum atque ex libero a ea.
+        div.card
+          h3 Practice makes you perfect.
+          div.card-box
+            div.card-img
+              img(src="/static/img/f.png");
+            div.card-content
+              p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quas dignissimos nam nulla expedita, nemo optio itaque, facere amet beatae animi sapiente nesciunt cum earum atque ex libero a ea.
+    section#sponsorSection
+        h2 Our sponsors
+        div#sponsors
+          img(src="/static/img/f.png",alt="sponsor image",class="spImage");
+          img(src="/static/img/l.png",alt="sponsor image",class="spImage");
+          img(src="/static/img/m.png",alt="sponsor image",class="spImage");
